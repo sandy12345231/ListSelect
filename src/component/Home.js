@@ -21,12 +21,12 @@ function Home({ data, passData }) {
 
         // </ul>
            <tr  key={index}>
-           <th> <label class="customcheckbox"> 
+           <th> <div  class="checkbox"><label>
            <input type="checkbox" class="listCheckbox" 
            checked={element.checked}
           id={`custom-checkbox-${element.value}`}
            onChange={() => passData(element.id)}
-        value={element.value}/> <span class="checkmark"></span> </label> </th>
+        value={element.value}/></label> </div></th>
            <td>{element.value}</td>
        </tr>
       );
